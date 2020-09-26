@@ -3,4 +3,8 @@ class ProfessorTitular(nome: String,
                        codigo: Int,
                        tempoDeCasa: Int,
                        val especialidade: String): Professor(nome, sobrenome, codigo, tempoDeCasa) {
+    override fun toString(): String {
+        return "ProfessorTitular(${super.toString()}, especialidade=$especialidade)"
+    }
+
 }

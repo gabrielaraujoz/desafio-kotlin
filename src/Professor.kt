@@ -1,5 +1,9 @@
-open class Professor(nome: String,
+abstract class Professor(nome: String,
                      sobrenome: String,
                      codigo: Int,
-                     val tempoDeCasa: Int): Pessoa(nome, sobrenome, codigo) {
+                     var tempoDeCasa: Int): Pessoa(nome, sobrenome, codigo) {
+    override fun toString(): String {
+        return "${super.toString()}, tempoDeCasa=$tempoDeCasa"
+    }
+
 }
