@@ -1,0 +1,2 @@
+class Curso(val nome: String, val codigoCurso: Int, val professor: ProfessorTitular, val professorAdjunto: ProfessorAdjunto, val maxAlunos: Int, val alunosMatriculados: MutableList<Aluno> = mutableListOf() ) {
+}
