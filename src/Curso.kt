@@ -3,11 +3,11 @@ class Curso(val nome: String,
             val maxAlunos: Int,
             var alunosMatriculados: MutableList<Aluno> = mutableListOf() ) {
 
-    var professor: ProfessorTitular?
+    var professorTitular: ProfessorTitular?
     var professorAdjunto: ProfessorAdjunto?
 
     init {
-        professor = null
+        professorTitular = null
         professorAdjunto = null
     }
 
@@ -24,7 +24,7 @@ class Curso(val nome: String,
     }
 
     override fun toString(): String {
-        return "Curso(nome='$nome', codigoCurso=$codigoCurso, maxAlunos=$maxAlunos, alunosMatriculados=$alunosMatriculados, professor=$professor, professorAdjunto=$professorAdjunto)"
+        return "Curso(nome='$nome', codigoCurso=$codigoCurso, maxAlunos=$maxAlunos, alunosMatriculados=$alunosMatriculados, professorTitular=$professorTitular, professorAdjunto=$professorAdjunto)"
     }
 
 

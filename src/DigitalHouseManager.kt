@@ -92,16 +92,16 @@ class DigitalHouseManager (val listaDeAlunos: MutableList<Aluno> = mutableListOf
                     var professorTitular = encontrarProfessor(codigoProfessorTitular)
                     var professorAdjunto = encontrarProfessor(codigoProfessorAdjunto)!!
                     var curso = encontrarCurso(codigoCurso)!!
-                    curso.professor = professorTitular as ProfessorTitular?
+                    curso.professorTitular = professorTitular as ProfessorTitular?
                     curso.professorAdjunto = professorAdjunto as ProfessorAdjunto?
                 } else {
-                    throw Exception()
+                    throw Exception("O código do curso é inválido.")
                 }
             } else {
-                throw Exception()
+                throw Exception("Professor Adjunto não cadastrado.")
             }
         } else {
-            throw Exception()
+            throw Exception("Professor Titular não cadastrado")
         }
     }
 
