@@ -20,9 +20,9 @@ fun main() {
     admin.excluirProfessor(3)
     println(admin.listaDeProfessores)
 
-    admin.registrarAluno("Gabriel", "Araujo",1)
-    admin.registrarAluno("Nykolle", "Malone", 2)
-    admin.registrarAluno("Misha", "Stalin", 3)
+    admin.matricularAluno("Gabriel", "Araujo",1)
+    admin.matricularAluno("Nykolle", "Malone", 2)
+    admin.matricularAluno("Misha", "Stalin", 3)
     println(admin.listaDeAlunos)
 
     try {

@@ -33,7 +33,7 @@ class DigitalHouseManager (val listaDeAlunos: MutableList<Aluno> = mutableListOf
         } as MutableList<Professor>
     }
 
-    fun registrarAluno(nome: String, sobrenome: String, codigo: Int) {
+    fun matricularAluno(nome: String, sobrenome: String, codigo: Int) {
         var novoAluno = Aluno(nome, sobrenome, codigo)
         listaDeAlunos.add(novoAluno)
     }
